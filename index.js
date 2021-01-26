@@ -35,7 +35,7 @@ module.exports = postcss.plugin('postcss-px-to-viewport', function (options) {
           handle(options[i])
         }
       } else {
-        options(options)
+        handle(options)
       }
 
       function handle(options) {
